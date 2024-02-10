@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%= HandbookDivision.human_attribute_name(:fullname) %>:</b>
+  <%= @handbook_division.fullname %>
+</p>
+
+<p>
+  <b><%= HandbookDivision.human_attribute_name(:shortname) %>:</b>
+  <%= @handbook_division.shortname %>
+</p>
+
+
+<%= link_to 'Редактировать', edit_handbook_division_path(@handbook_division) %> |
+<%= link_to 'Назад', handbook_divisions_path %>

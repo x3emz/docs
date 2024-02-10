@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:employee_id) %>:</b>
+  <%= @abroad.employee %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:country) %>:</b>
+  <%= @abroad.country %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:date_to) %>:</b>
+  <%= @abroad.date_to %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:purpose) %>:</b>
+  <%= @abroad.purpose %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:awareness_conclusion) %>:</b>
+  <%= @abroad.awareness_conclusion %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:making_on_out) %>:</b>
+  <%= @abroad.making_on_out %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:solution_output) %>:</b>
+  <%= @abroad.solution_output %>
+</p>
+
+<p>
+  <b><%= Abroad.human_attribute_name(:additional_data) %>:</b>
+  <%= @abroad.additional_data %>
+</p>
+
+
+<%= link_to 'Редактировать', edit_abroad_path(@abroad) %> |
+<%= link_to 'Назад', abroads_path %>

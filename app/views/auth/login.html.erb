@@ -1,0 +1,27 @@
+<div>
+
+<fieldset>	
+<legend>Зарегистрируйтесь, пожалуйста</legend>
+
+<% flash.each do |key, value| %>
+<div class="flash <%= key %>"><%= value %></div>
+<% end %>
+
+
+<%= form_tag do %>
+<p>
+<label for="name">Имя:</label><br>
+<%= select(:user, :id, User.all.collect{|p| [ p.name, p.id ] } ) %>
+</p>
+<p>
+<label for="password">Пароль:</label><br>
+<%= password_field_tag :password, params[:password] %>
+</p>
+
+<p>
+<%= submit_tag "Регистрация" %>
+</p>
+
+<% end %>
+</fieldset>
+</div>
